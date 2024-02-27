@@ -1,32 +1,64 @@
 /*  your css code here. If applicable */
 *{
-	margin:0;
-	padding:0;
+    margin: 0;
+    padding: 0;
 }
 body{
-	background-color:#f6f6f6;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	height:100vh;
+    background-color:#f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
-#left{
-	width:450px;
+.container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}  
+.left{
+    width: 450px;
 	margin-top:70px;
-	display:inline-block;
-}
-form{
 	display:flex;
+    flex-direction: column;
+
+}
+.right{
+    display:flex;
 	width:300px;
 	background-color:white;
 	padding:20px;
 	border-radius:5px:
-	box-shadow:0 0 10px #ccc; 
+    box-shadow: 0 0 10px #ccc;
    flex-direction:column;
    gap:10px;   
 }
-#email,#password{
-	border: 1px solid #ccc;
+.form {
+    flex-direction: column;
+}
+input{
+    border: 1px solid #ccc;
 	border-radius: 5px;
 	padding:10px;
+    margin: 5px;
+    width: 100%;
+}
+button{
+    background-color: #1877f2;
+    border-radius :5px; 
+    padding :10px 20px; 
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #1877f2;
+}
+.signup{
+    background-color: #42b72a;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
 }
